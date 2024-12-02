@@ -1,0 +1,323 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 780px;
+  max-width: 90%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  user-select: none;
+}
+
+label {
+  margin-top: 10px;
+  display: block;
+  font-weight: bold;
+  user-select: none;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 22px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #005eff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 22px;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+button:hover {
+  background-color: #124dff;
+}
+
+.link {
+  width: 100%;
+  padding: 10px;
+  background-color: #0140ff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 22px;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.link:hover {
+  background-color: #003ae8;
+}
+
+.link2 {
+  width: 100%;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 22px;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.link2:hover {
+  background-color: #dd0000;
+}
+
+.hidden {
+  display: none;
+}
+
+.message {
+  text-align: center;
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+}
+
+.success {
+  color: green;
+  font-size: 22px;
+}
+
+.error {
+  color: red;
+  font-size: 22px;
+}
+
+.login-container {
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.login-container.visible {
+  opacity: 1;
+}
+
+.signup-container {
+  transition: opacity 0.5s ease-in;
+}
+
+.signup-container.hidden {
+  opacity: 0;
+}
+
+#databaseSection {
+  margin-top: 20px;
+  display: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  font-size: 22px;
+}
+
+tr {
+  background-color: #fcffe9;
+}
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #f7ffb7;
+}
+
+th {
+  background-color: #f7ffb7;
+}
+
+tr:nth-child(even) {
+  background-color: #f7ffb7;
+}
+
+.login-shortcut {
+  color: #909090;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+span {
+  color: #003ae8;
+  cursor: pointer;
+  font-size: 22px;
+  transition: 250ms;
+  user-select: none;
+}
+
+span:hover {
+  color: #002db5;
+}
+
+.de {
+  transform: translate(0, 5px);
+}
+
+.close-button {
+  background-color: none;
+  margin-left: 90%;
+  transition: 250ms ease;
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  border-radius: 25px;
+  color: rgb(57, 0, 0);
+  font-size: 25px;
+  user-select: none;
+}
+
+.close-button:hover {
+  transform: scale(1.02);
+  background-color: rgb(232, 232, 232);
+}
+
+ol img {
+  background-color: none;
+}
+
+#toggleSignupPassword,
+#toggleLoginPassword {
+  font-size: 22px;
+  margin-left: 82%;
+  transform: translateY(-84px);
+  color: rgb(117, 117, 117);
+  border: 2px solid rgb(117, 117, 117);
+  padding: 9.5px;
+  border-radius: 4px;
+  transition: 250ms ease;
+  user-select: none;
+}
+
+#toggleSignupPassword:hover,
+#toggleLoginPassword:hover {
+  background-color: rgb(222, 222, 222);
+  cursor: pointer;
+}
+
+.heading-database {
+  text-align: left;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  input,
+  button,
+  .link,
+  .link2 {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  .login-shortcut,
+  span {
+    font-size: 18px;
+  }
+
+  table {
+    font-size: 18px;
+  }
+
+  th,
+  td {
+    padding: 6px;
+  }
+
+  #toggleSignupPassword,
+  #toggleLoginPassword {
+    font-size: 18px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  input,
+  button,
+  .link,
+  .link2 {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  label {
+    font-size: 16px;
+  }
+
+  .login-shortcut,
+  span {
+    font-size: 16px;
+  }
+
+  table {
+    font-size: 16px;
+  }
+
+  th,
+  td {
+    padding: 4px;
+  }
+
+  #toggleSignupPassword,
+  #toggleLoginPassword {
+    font-size: 16px;
+    padding: 6px;
+  }
+}

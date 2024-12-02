@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      type="x-icon"
+      href="login_45dp_FFFFFF_FILL0_wght400_GRAD0_opsz48.png"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp & LogIn Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="signup-container">
+        <h1>Sign Up</h1>
+        <form id="signupForm">
+          <label for="username"
+            ><img
+              src="person_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+              alt=""
+              width="35px"
+              height="35px"
+            />
+          </label>
+          <input
+            type="text"
+            id="username"
+            required
+            autocomplete="username"
+            placeholder="Enter your username"
+          />
+
+          <label for="email"
+            ><img
+              src="mail_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+              alt=""
+              width="35px"
+              height="35px"
+          /></label>
+          <input
+            type="email"
+            id="email"
+            required
+            autocomplete="email"
+            placeholder="Enter your email"
+          />
+
+          <label for="password"
+            ><img
+              src="password_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+              alt=""
+              width="35px"
+              height="35px"
+          /></label>
+          <input
+            type="password"
+            id="password"
+            required
+            autocomplete="new-password"
+            placeholder="Enter your password"
+          />
+
+          <ol id="toggleSignupPassword">
+            Show
+          </ol>
+          <button class="link" type="submit">Sign Up</button>
+          <br />
+          <br />
+          <div id="toggleLogin" class="login-shortcut">
+            Already signed up? <span>Sign In instead</span>
+          </div>
+        </form>
+        <div id="message" class="message"></div>
+      </div>
+
+      <div id="loginForm" class="login-container hidden">
+        <h1>Sign in</h1>
+        <form id="loginFormElement">
+          <label for="loginEmail"
+            ><img
+              src="mail_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+              alt=""
+              width="35px"
+              height="35px"
+          /></label>
+          <input
+            type="email"
+            id="loginEmail"
+            required
+            autocomplete="email"
+            placeholder="Enter your email"
+          />
+
+          <label for="loginPassword"
+            ><img
+              src="password_24dp_000000_FILL0_wght400_GRAD0_opsz24.png"
+              alt=""
+              width="35px"
+              height="35px"
+          /></label>
+          <input
+            type="password"
+            id="loginPassword"
+            required
+            autocomplete="current-password"
+            placeholder="Enter your password"
+          />
+          <ol id="toggleLoginPassword">
+            Show
+          </ol>
+
+          <button type="submit">Sign In</button>
+        </form>
+        <br />
+
+        <button class="link" id="viewDatabase">View Database</button> <br />
+        <br />
+        <button class="link2" id="deleteDatabase">Delete Database</button>
+        <div id="loginMessage" class="message"></div>
+      </div>
+      <br />
+
+      <div id="databaseSection" class="visible">
+        <h1 class="heading-database">
+          <hr />
+          <ol id="closeDatabase" class="close-button">
+            ✖
+          </ol>
+          Database
+          <img class="de" src="657897.png" alt="" width="30px" height="30px" />
+        </h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Password</th>
+            </tr>
+          </thead>
+          <tbody id="databaseBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
